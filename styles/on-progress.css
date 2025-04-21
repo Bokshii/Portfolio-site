@@ -87,6 +87,13 @@ body {
     color: #aaa;
 }
 
+.container-1 h2 {
+    font-size: 20px;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+    color: #a259ff;
+}
+
 .timer {
     font-size: 0.9rem;
     color: #aaa;

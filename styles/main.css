@@ -1,0 +1,131 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#container {
+    text-align: center;
+}
+
+#container h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    transition: all 0.3s ease, filter 0.3s ease;
+}
+
+#container p {
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+#container > p:first-of-type {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#container img {
+    width: 80px;
+    height: 80px;
+    filter: invert(100%);
+    margin: 10px;
+    transition: all 0.3s ease, filter 0.3s ease;
+}
+
+#container h1:hover {
+    transform: scale(1.0);
+}
+
+#container img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #a259ff);
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#container.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+#container img.dark-mode {
+    filter: invert(0%);
+    transition: all 0.3s ease, filter 0.3s ease;
+}
+
+footer {
+    background-color: #8a47d4;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+footer:hover {
+    filter: drop-shadow(0 0 10px #a259ff);
+}
+
+footer.dark-mode {
+    background-color: #8a47d4;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #container h1 {
+        font-size: 40px;
+    }
+
+    #container p {
+        font-size: 16px;
+    }
+
+    #container img {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer {
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    #container h1 {
+        font-size: 30px;
+    }
+
+    #container img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #container p {
+        font-size: 14px;
+    }
+}
+
+@media (hover: none) {
+    #container img:hover {
+        transform: none;
+        filter: none;
+    }
+
+    footer:hover {
+        filter: none;
+    }
+}

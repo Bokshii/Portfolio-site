@@ -1,0 +1,217 @@
+@import "main.css";
+@import "button.css";
+
+
+#skills {
+    text-align: center;
+    justify-content: center;
+}
+
+#skills h2 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    text-align: center;
+    padding: 10px 0 0 0;
+}
+#skills ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+#skills li {
+    margin: 10px;
+    text-align: center;
+}
+
+#skills img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    margin: 10px;
+}
+
+#skills img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px #a259ff);
+}
+
+#skills.dark-mode {
+    background-color: #252829;
+    color: #fafffd;
+}
+
+/* ==== Experience Section (Light Mode) ==== */
+#experience {
+    padding: 40px 20px;
+    background-color: #fafffd;
+    color: #252829;
+    text-align: center;
+  }
+  
+  #experience h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .experience-item {
+    background-color: #ffffff;
+    border-left: 4px solid #a259ff; /* Mystic Purple */
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    border-radius: 10px;
+  }
+  
+  .experience-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  .experience-item h3 {
+    margin: 0;
+    font-size: 22px;
+    
+  }
+  
+  .exp-date {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0 10px;
+    display: block;
+  }
+  
+  .experience-item p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+
+  /* ==== Experience Section (Dark Mode) ==== */
+  #experience.dark-mode {
+    background-color: black;
+    color: #fafffd;
+  }
+
+#experience.dark-mode .experience-item {
+    background-color: #333;
+    border-left: 4px solid #a259ff; /* Mystic Purple */
+    color: #fafffd;
+  }
+
+#experience.dark-mode {
+    color: #fafffd;
+}
+
+body.dark-mode .exp-date {
+    color: #fafffd;
+}
+
+body.dark-mode #experience p {
+    color: #fafffd;
+}
+
+/* Projects Section */
+#project {
+    padding: 40px 20px;
+    background-color: #fafffd; /* Light background to match the Experience section */
+    color: #252829; /* Dark text for readability */
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+#project h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: black; /* Dark text for the heading */
+}
+
+.project-item {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-left: 4px solid #a259ff; /* Mystic Purple border to match Experience Section */
+    border-radius: 10px;
+    background-color: #ffffff; /* Light background for each project item */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    background-color: #f3f3f3; /* Slightly darker background on hover */
+}
+
+.project-item h3 {
+    margin: 0 0 10px;
+    font-size: 22px;
+    color: #252829; /* Dark text for project titles */
+}
+
+.project-item p {
+    margin: 0 0 10px;
+    font-size: 16px;
+    color: #555; /* Subtle gray for project descriptions */
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #a259ff; /* Mystic Purple for links */
+    font-weight: bold;
+}
+
+.project-item a:hover {
+    text-decoration: underline;
+    color: #7a1fb0; /* Darker purple on hover */
+}
+
+/* Projects Section (Dark Mode) */
+body.dark-mode #project {
+    background-color: black; /* Dark background for the section */
+    color: white; /* Light text for readability */
+}
+
+body.dark-mode #project h2 {
+    color: white; /* Light text for the heading */
+}
+body.dark-mode .project-item {
+    background-color: #333; /* Dark background for project items */
+    border: 1px solid #444; /* Subtle border for contrast */
+    border-left: 4px solid #a259ff; /* Mystic Purple border */
+    color: #fafffd; /* Light text for project content */
+}
+
+body.dark-mode .project-item:hover {
+    background-color: #444; /* Slightly lighter background on hover */
+}
+
+body.dark-mode .project-item h3 {
+    color: #fafffd; /* Light text for project titles */
+}
+
+body.dark-mode .project-item p {
+    color: #d1d1d1; /* Subtle gray for project descriptions */
+}
+
+body.dark-mode .project-item a {
+    color: #a259ff; /* Mystic Purple for links */
+}
+
+body.dark-mode .project-item a:hover {
+    color: #d1a3ff; /* Softer purple on hover */
+}

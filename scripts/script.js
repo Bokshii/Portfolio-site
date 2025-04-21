@@ -37,4 +37,3 @@ if (button) {
 // Footer auto year
 const year = new Date().getFullYear();
 document.getElementById('year').textContent = year;
-document.getElementById('footer').textContent = `© ${year} Srijan Raj Shakya (Bokshii)`;
